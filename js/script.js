@@ -62,7 +62,7 @@ function startWish() {
   cake.classList.remove("ready");
   candles.classList.remove("out");
   countdown.classList.remove("hide");
-  hint.textContent = "เวลาอธิษฐาน 🙏";
+  hint.textContent = "อธิษฐานค้าบบบ";
    document.querySelectorAll(".photo").forEach((p) => p.classList.remove("in"));
 
   const show = () => {
