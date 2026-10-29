@@ -9,6 +9,7 @@ const CONFIG = {
   wishSeconds: 3,            // เวลาให้อธิษฐาน (วินาที)
   youtube: "",               // วางลิงก์ YouTube ตรงนี้ เช่น "https://www.youtube.com/watch?v=xxxxxxxxxxx"
   youtubeStart: 0,           // เริ่มเล่นที่วินาทีที่เท่าไร (ข้ามช่วงโฆษณา/intro ได้)
+ photos: ["images/photo1.jpg", "images/photo2.jpg", "images/photo3.jpg"],
   message: [
     "Feliz cumpleaños ในที่คือก็แปลว่าสุขสันต์วันเกิดนั่นแหละ คำอวยพรอาจจะยาวหน่อยแต่อยากให้อ่านให้จบนะ แพรวโตขึ้นอีกปีแล้วนะ เก่งมากเยยย ก็ขอให้ปีนี้ดีกว่าทุกปีที่ผ่านมา ขอให้โชคดีในทุกการเติบโต มีคนรักและเอ็นดูเยอะแยะ แต่เยอะเกินเราก็จะหวงอะดิ แต่ก็น่าจะดีนะ ขอให้ไม่มีฝนตกในใจ ถ้าแพรวยิ้มได้เยอะๆก็จะดี แต่ถ้าส่งมาให้เราดูด้วยก็จะดียิ่งกว่า และไม่ว่าแพรวจะเจอปัญหาอะไร เค้าเชื่อว่าแพรวจะผ่านไปได้แน่นอน เค้าจะอยู่ตรงกับแพรวเสมอ แล้วก็อย่าลืมดูแลตัวเอง รู้มั้ยว่าเค้าเป็นห่วงขนาดไหนเวลาแพรวไม่ได้กินข้าวแล้วบ่นปวดท้อง ตื่นมาปวดหัว แล้วก็มีเรื่องอะไรก็ทักมาระบายได้ เจอเรื่องอะไรในชีวิตประจำวันก็อยากให้มาเล่าให้ฟัง พร้อมรับฟังเสมอ and finally, i luv u just the way you are- always"
     
@@ -30,6 +31,17 @@ const overlay = $("overlay");
 const confetti = $("confetti");
 const bgm = $("bgm");
 const soundBtn = $("sound");
+const photosBox = $("photos");
+CONFIG.photos.forEach((src) => {
+  const fig = document.createElement("figure");
+  fig.className = "photo";
+  const img = new Image();
+  img.src = src;
+  img.alt = "";
+  img.onerror = () => fig.remove();   // ไม่มีไฟล์รูปก็ข้ามไป ไม่พัง
+  fig.appendChild(img);
+  photosBox.appendChild(fig);
+});
 
 /* ---------- ใส่ข้อความบนกระดาษ (ใช้ textContent กันโค้ดแปลกปลอมจากลิงก์) ---------- */
 $("title").textContent = CONFIG.title;
@@ -51,12 +63,15 @@ function startWish() {
   candles.classList.remove("out");
   countdown.classList.remove("hide");
   hint.textContent = "เวลาอธิษฐาน 🙏";
+   document.querySelectorAll(".photo").forEach((p) => p.classList.remove("in"));
 
   const show = () => {
     countdown.textContent = n;
     countdown.classList.remove("tick");
     void countdown.offsetWidth;          // รีสตาร์ทแอนิเมชัน
     countdown.classList.add("tick");
+        const photo = photosBox.children[CONFIG.wishSeconds - n];   // เลข 3 → รูปที่ 1, เลข 2 → รูปที่ 2 ...
+    if (photo) photo.classList.add("in");
   };
   show();
 
@@ -65,6 +80,7 @@ function startWish() {
     n--;
     if (n > 0) { show(); return; }
     clearInterval(timer);
+     document.querySelectorAll(".photo").forEach((p) => p.classList.add("in"));
     countdown.classList.add("hide");
     hint.textContent = "แตะที่เค้กเพื่อเป่าเทียน 🎂";
     cake.disabled = false;
