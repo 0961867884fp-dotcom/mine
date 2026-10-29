@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <ellipse cx="100" cy="186" rx="52" ry="8" fill="#000" opacity=".12"/>
+  <!-- ลูกโป่ง -->
+  <path d="M150 128 Q146 100 156 64" stroke="#8a7a9c" stroke-width="2" fill="none"/>
+  <ellipse cx="158" cy="44" rx="20" ry="24" fill="#ffb84d"/>
+  <path d="M158 68 l-5 7 h10 Z" fill="#ffb84d"/>
+  <ellipse cx="151" cy="36" rx="5" ry="8" fill="#fff" opacity=".5"/>
+  <!-- ตัว -->
+  <ellipse cx="96" cy="152" rx="44" ry="34" fill="#fff"/>
+  <ellipse cx="96" cy="160" rx="26" ry="20" fill="#ffeaf1"/>
+  <!-- หูกระต่าย -->
+  <ellipse cx="66" cy="34" rx="15" ry="38" fill="#fff" transform="rotate(-10 66 34)"/>
+  <ellipse cx="66" cy="38" rx="7" ry="26" fill="#ffb3c6" transform="rotate(-10 66 38)"/>
+  <ellipse cx="116" cy="30" rx="15" ry="38" fill="#fff" transform="rotate(14 116 30)"/>
+  <ellipse cx="116" cy="34" rx="7" ry="26" fill="#ffb3c6" transform="rotate(14 116 34)"/>
+  <!-- หัว -->
+  <ellipse cx="92" cy="98" rx="52" ry="46" fill="#fff"/>
+  <!-- ตา -->
+  <ellipse cx="70" cy="98" rx="7" ry="9" fill="#4a3b5c"/>
+  <ellipse cx="114" cy="98" rx="7" ry="9" fill="#4a3b5c"/>
+  <circle cx="72" cy="94" r="3" fill="#fff"/>
+  <circle cx="116" cy="94" r="3" fill="#fff"/>
+  <!-- แก้ม -->
+  <ellipse cx="54" cy="114" rx="9" ry="6" fill="#ff9fb2" opacity=".75"/>
+  <ellipse cx="130" cy="114" rx="9" ry="6" fill="#ff9fb2" opacity=".75"/>
+  <!-- จมูก ปาก ฟัน -->
+  <ellipse cx="92" cy="110" rx="5" ry="4" fill="#ff7f9a"/>
+  <path d="M92 114 v6 M92 120 q-8 8 -15 2 M92 120 q8 8 15 2" stroke="#4a3b5c" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <rect x="87" y="121" width="10" height="9" rx="2" fill="#fff" stroke="#e8d9e8" stroke-width="1.5"/>
+  <!-- โบว์ -->
+  <path d="M92 56 l-16 -9 v18 Z M92 56 l16 -9 v18 Z" fill="#8fd6c0"/>
+  <circle cx="92" cy="56" r="5" fill="#5fbfa3"/>
+  <!-- มือจับลูกโป่ง -->
+  <circle cx="140" cy="140" r="9" fill="#fff" stroke="#f0e4f0" stroke-width="1.5"/>
+</svg>

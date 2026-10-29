@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>praew 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- หน้าเค้ก -->
+  <main class="stage" id="stage">
+    <p class="hint" id="hint" aria-live="polite"></p>
+    <div class="countdown" id="countdown" aria-hidden="true">3</div>
+
+    <button class="cake" id="cake" disabled aria-label="แตะเพื่อเป่าเทียน">
+      <span class="candles">
+        <span class="candle"><span class="flame"></span></span>
+        <span class="candle"><span class="flame"></span></span>
+        <span class="candle"><span class="flame"></span></span>
+      </span>
+      <span class="layer layer-top"></span>
+      <span class="layer layer-bottom"></span>
+      <span class="plate"></span>
+    </button>
+  </main>
+
+  <!-- confetti -->
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+  <!-- กระดาษคำอวยพร -->
+  <section class="overlay" id="overlay" aria-hidden="true">
+    <article class="paper" id="paper">
+      <span class="tape"></span>
+      <h1 id="title"></h1>
+      <p class="to" id="to"></p>
+      <div class="message" id="message"></div>
+      <p class="from" id="from"></p>
+
+      <!-- ตัวละครมุมล่างซ้าย/ขวา: เปลี่ยนรูปได้ที่โฟลเดอร์ images -->
+      <img class="char char-left"  src="images/char-left.svg"  alt="">
+      <img class="char char-right" src="images/char-right.svg" alt="">
+    </article>
+    <button class="replay" id="replay" type="button">อีกรอบก็ได้นะ 🔁</button>
+  </section>
+
+  <!-- เพลงจาก YouTube (ซ่อนไว้ ไม่เห็นหน้าจอวิดีโอ) ตั้งลิงก์ที่ js/script.js -->
+  <div class="yt-hidden" aria-hidden="true"><div id="yt-player"></div></div>
+
+  <!-- สำรอง: ถ้าไม่ได้ใส่ลิงก์ YouTube จะใช้ไฟล์ audio/birthday.mp3 แทน -->
+  <audio id="bgm" src="audio/birthday.mp3" loop preload="auto"></audio>
+  <button class="sound" id="sound" type="button" aria-label="เปิด/ปิดเสียงเพลง" hidden>🔊</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

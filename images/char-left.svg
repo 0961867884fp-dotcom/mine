@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <ellipse cx="100" cy="186" rx="52" ry="8" fill="#000" opacity=".12"/>
+  <!-- ตัว -->
+  <ellipse cx="100" cy="150" rx="46" ry="36" fill="#ffd9a8"/>
+  <ellipse cx="100" cy="158" rx="28" ry="22" fill="#fff4e3"/>
+  <!-- หู -->
+  <path d="M48 76 L58 28 L92 58 Z" fill="#ffd9a8"/>
+  <path d="M152 76 L142 28 L108 58 Z" fill="#ffd9a8"/>
+  <path d="M58 62 L62 42 L78 56 Z" fill="#ffaabb"/>
+  <path d="M142 62 L138 42 L122 56 Z" fill="#ffaabb"/>
+  <!-- หัว -->
+  <ellipse cx="100" cy="94" rx="58" ry="50" fill="#ffd9a8"/>
+  <!-- ลายแก้ม -->
+  <path d="M70 52 q6 12 -2 22 M100 46 v16 M130 52 q-6 12 2 22" stroke="#f2b977" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- ตา -->
+  <ellipse cx="76" cy="98" rx="8" ry="10" fill="#4a3b5c"/>
+  <ellipse cx="124" cy="98" rx="8" ry="10" fill="#4a3b5c"/>
+  <circle cx="79" cy="94" r="3" fill="#fff"/>
+  <circle cx="127" cy="94" r="3" fill="#fff"/>
+  <!-- แก้ม -->
+  <ellipse cx="58" cy="116" rx="10" ry="6" fill="#ff9fb2" opacity=".75"/>
+  <ellipse cx="142" cy="116" rx="10" ry="6" fill="#ff9fb2" opacity=".75"/>
+  <!-- จมูก ปาก -->
+  <path d="M94 112 h12 l-6 7 Z" fill="#ff7f9a"/>
+  <path d="M100 119 q-8 10 -16 4 M100 119 q8 10 16 4" stroke="#4a3b5c" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- หนวด -->
+  <path d="M40 108 h-20 M42 118 l-18 6 M160 108 h20 M158 118 l18 6" stroke="#4a3b5c" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- หมวกปาร์ตี้ -->
+  <path d="M100 4 L74 52 H126 Z" fill="#8fd6c0"/>
+  <path d="M86 32 l28 0 M80 44 l40 0" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="100" cy="6" r="7" fill="#ff8fab"/>
+  <!-- มือถือของขวัญ -->
+  <rect x="120" y="140" width="36" height="30" rx="4" fill="#ff8fab"/>
+  <rect x="134" y="140" width="8" height="30" fill="#fff8ec"/>
+  <rect x="120" y="152" width="36" height="7" fill="#fff8ec"/>
+  <path d="M138 140 q-14 -16 -18 -4 q4 8 18 4 q14 4 18 -4 q-4 -12 -18 4" fill="#ffb84d"/>
+  <circle cx="122" cy="168" r="9" fill="#ffd9a8"/>
+</svg>
